@@ -1,0 +1,68 @@
+@font-face {
+  font-family: interRegular;
+  src: url('./assets/fonts/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: interMedium;
+  src: url('./assets/fonts/Inter-Medium.ttf');
+}
+@font-face {
+  font-family: interSemiBold;
+  src: url('./assets/fonts/Inter-SemiBold.ttf');
+}
+@font-face {
+  font-family: interBold;
+  src: url('./assets/fonts/Inter-Bold.ttf');
+}
+@font-face {
+  font-family: interExtraBold;
+  src: url('./assets/fonts/Inter-ExtraBold.ttf');
+}
+
+:root{
+  --primary-bg: #e4f6f6;
+  --secondary-bg: #00b0ab;
+  --tab-bg: #c7edec;
+  --card-primary: #c7edec;
+  --card-secondary: #d6f1f0;
+  --card-tertiary: #a3e2e0;
+  --card-bio: #d6f1f0;
+  --text-input: #e4f6f6;
+  --font-header: #003f38;
+  --font-link: #00b0ab;
+  --font-name: #3e4646;
+  --font-location: #6a7777;
+  --font-profession: #007373;
+  --font-bio: #47504f;
+  --font-recommendation: #64c466;
+  --font-chat: #00504f;
+  --font-charge: #00726f;
+  --font-accent: #fb0f36;
+  --icon-active: #00504f;
+  --icon-inactive: #2fbebb;
+  --btn-primary: #2fbebb;
+  --btn-secondary: #00504f;
+  --rating-color: #ffcc01;
+  --shadow-md: 1px 1px 5px rgba(0, 0, 0, .2);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  
+}
+
+body {
+  font-family: interRegular;
+  background-color: var(--primary-bg);
+  
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+

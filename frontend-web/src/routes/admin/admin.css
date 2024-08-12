@@ -1,0 +1,148 @@
+.admin-page{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    display: flex;
+}
+.admin-nav{
+    
+    width: 250px;
+    height: 100vh;
+    background-color: var(--card-tertiary);
+}
+.admin-nav .profile{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: var(--secondary-bg);
+}
+.admin-nav .profile img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border: 2px solid var(--card-tertiary);
+    object-fit: cover;
+}
+.admin-nav .profile p{
+    font-family: interExtraBold;
+    font-size: 1.3rem;
+    color: var(--font-header);
+}
+.admin-nav nav{
+    padding: 10px;
+}
+.admin-nav nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.admin-nav nav ul a, .admin-nav nav ul button{
+    background-color: var(--card-primary);
+    display: block;
+    padding: 10px;
+    color: var(--font-link);
+    font-family: interSemiBold;
+    text-align: center;
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    border: 2px solid var(--secondary-bg);
+}
+.admin-nav nav ul a:hover{
+    border: 2px solid var(--secondary-bg);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+}
+.admin-nav nav ul a.active{
+    background-color: var(--card-secondary);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+    border: 2px solid var(--card-tertiary);
+}
+.admin-nav nav ul button{
+    width: 100%;
+}
+.admin-content{
+    flex: 1;
+}
+.add-service{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: interRegular;
+}
+.add-service-card {
+    width: 50%;
+    box-shadow: var(--shadow-md);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--card-secondary);
+}
+.add-service-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 2px solid var(--card-tertiary);
+    object-fit: cover;
+}
+.row{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.row input, .add-service-card textarea{
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-bg);
+    outline: none;
+    background-color: var(--card-primary);
+    color: var(--font-charge);
+    font-size: 1rem;
+    font-family: interRegular;
+}
+input::placeholder, .add-service-card textarea::placeholder {
+    color: var(--secondary-bg);
+    font-family: interRegular;
+}
+.add-service-card textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+}
+.add-service-card button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    font-family: interBold;
+    cursor: pointer;
+    transition: transform .2s ease-in;
+    background-color: var(--btn-primary);
+    color: var(--card-primary);
+}
+.admin-services-container{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.inner-admin-services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+.inner-admin-services::-webkit-scrollbar{
+    display: none;
+}

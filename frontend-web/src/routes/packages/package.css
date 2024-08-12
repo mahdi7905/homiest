@@ -1,0 +1,58 @@
+.package-container{
+    flex: 1;
+    width:100%; 
+    padding:20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.packageCard{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    border: 1px dashed var(--secondary-bg);
+    border-radius: 7px;
+    background-color: var(--card-bio);
+}
+.coins{
+    font-family: interBold;
+    color: var(--font-charge);
+    font-size: 20px;
+}
+.price{
+    font-family: interSemiBold;
+    color: var(--font-charge);
+    font-size: 18px;
+}
+.price span{
+    color: var(--font-accent);
+}
+.purchase{
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--secondary-bg);
+    border-radius: 3px;
+    color: var(--primary-bg);
+    font-family: interMedium;
+}
+
+
+@media (max-width:1100px){
+    .package-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:700px){
+    .package-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:500px){
+    .package-container {
+        grid-template-columns: 1fr;
+    }
+}

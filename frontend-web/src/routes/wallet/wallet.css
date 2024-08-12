@@ -1,0 +1,24 @@
+.recharge-btn{
+    padding: 10px;
+    border: 0;
+    background-color: var(--btn-primary);
+    border-radius: 10px;
+    color: var(--primary-bg);
+    font-family: interSemiBold;
+    cursor: pointer;
+}
+.balance{
+    font-family: interMedium;
+    font-size: large;
+    color: var(--font-header);
+}
+.balance span{
+    font-family: interExtraBold;
+}
+.balance span.low{
+    color: var(--font-accent);
+}
+.balance span.good{
+    color: var(--font-recommendation);
+}
+

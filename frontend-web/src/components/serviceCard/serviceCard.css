@@ -1,0 +1,95 @@
+.service-card{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--card-primary);
+    display: flex;
+}
+.service-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid var(--secondary-bg);
+}
+
+.service-card-contents{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.row-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+.row-name .name{
+    font-size: 1.2rem;
+}
+.charge{
+    font-family: interExtraBold;
+    color: var(--font-charge);
+    font-size: .7rem;
+}
+.row-profession{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.row-star{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.row-buttons{
+    align-self: flex-end;
+    display: flex;
+    width: 50%;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1300px) {
+    .row-buttons {
+        width: 60%;
+    }
+}
+@media (max-width: 1170px) {
+    
+    .row-buttons {
+        width: 50%;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .row-buttons {
+        width: 60%;
+    }
+}
+@media (max-width: 850px) {
+    
+
+    .row-buttons {
+        width: 70%;
+    }
+}
+@media (max-width: 750px) {
+    
+
+    .row-buttons {
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    
+
+    .row-buttons {
+        width: 60%;
+    }
+}

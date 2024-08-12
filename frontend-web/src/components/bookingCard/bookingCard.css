@@ -1,0 +1,54 @@
+.booking-card{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--card-primary);
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+}
+
+.service-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid var(--secondary-bg);
+}
+
+.label{
+    font-family: interSemibold;
+    color: var(--font-location);
+    font-size: 14px;
+}
+
+.label span{
+    color: var(--font-accent);
+}
+
+.view-booking, .cancel-booking, .pay-booking{
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--btn-primary);
+    color: var(--card-primary);
+    font-family: interSemiBold;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    transition: all .05s ease-in-out;
+}
+
+.cancel-booking{
+    background-color: var(--font-accent);
+}
+.pay-booking{
+    background-color: var(--font-recommendation);
+}
+
+.view-booking:active, .cancel-booking:active{
+    box-shadow: none;
+}
+
+.row-action-btn{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}

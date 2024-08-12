@@ -1,0 +1,141 @@
+.navbar{
+    background-color: var(--secondary-bg);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+}
+.nav{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-sm{
+    display: none;
+}
+.nav-sm-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.logo{
+    font-family: interExtraBold;
+    font-size: 2rem;
+    color:var(--font-header);
+}
+
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    list-style-type: none;
+    height: 100%;
+}
+
+
+.links li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.links li a{
+    font-family: interRegular;
+    color: var(--font-charge);
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.links li a.active{
+    border-bottom: 5px solid var(--icon-active);
+    color: var(--icon-active);
+    transition: .1s ease-in-out;
+}
+.nav-sm-wrapper .links li a.active{
+    border: 0;
+}
+
+.search{
+    font-family: interRegular;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.search-sm{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.search-inner{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.burger{
+    cursor: pointer;
+}
+
+.search-input{
+    font-family: interRegular;
+    height: 30px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline:none;
+    background-color: var(--text-input)
+}
+.search-btn{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: var(--text-input);
+    cursor:pointer;
+}
+
+.search-btn:active{
+    background:var(--btn-secondary);
+}
+
+
+
+
+@media (max-width: 968px) {
+    .nav {
+        display: none;
+        
+    }
+
+    .nav-sm{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .search-input {
+        height: 30px;
+        width: 100%;
+        
+    }
+
+}
+
+/* @media (max-width: 740px) {
+    
+    body{
+        display: none;
+    }
+} */

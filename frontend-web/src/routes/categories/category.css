@@ -1,0 +1,21 @@
+.category-container{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.inner-category{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width:500px){
+    .inner-category {
+        justify-content: center;
+    }
+}

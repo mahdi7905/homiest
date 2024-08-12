@@ -1,0 +1,6 @@
+.trending-img{
+    width: 250px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+}
